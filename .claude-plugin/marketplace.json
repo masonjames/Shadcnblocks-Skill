@@ -1,0 +1,18 @@
+{
+  "name": "shadcnblocks-marketplace",
+  "owner": {
+    "name": "Mason James"
+  },
+  "plugins": [
+    {
+      "name": "shadcnblocks",
+      "source": "./",
+      "description": "ShadcnBlocks integration for building frontends with shadcn/ui components and Tailwind CSS. Provides knowledge of 1,338 premium blocks and 1,189 free components.",
+      "keywords": ["shadcn", "tailwind", "ui", "components", "blocks", "frontend"]
+    }
+  ],
+  "metadata": {
+    "description": "Marketplace for the ShadcnBlocks skill",
+    "version": "0.1.0"
+  }
+}

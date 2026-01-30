@@ -7,7 +7,7 @@
     {
       "name": "shadcnblocks",
       "source": "./",
-      "description": "ShadcnBlocks integration for building frontends with shadcn/ui components and Tailwind CSS. Provides knowledge of 1,338 premium blocks and 1,189 free components.",
+      "description": "ShadcnBlocks integration with intelligent block selection. Uses multi-dimensional tagging (layout, tone, goal, media, interaction) and guided 1-2 question flow to recommend the best-fit blocks from 1,338 premium blocks and 1,189 free components.",
       "keywords": ["shadcn", "tailwind", "ui", "components", "blocks", "frontend"]
     }
   ],

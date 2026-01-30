@@ -2,6 +2,10 @@
 
 > 1,338 blocks across 71 categories. Browse visually at https://shadcnblocks.com/explorer/blocks
 
+## Intelligent Selection
+
+For best-fit block recommendations, consult **`block-index.md`** which contains tagged picks with multi-dimensional metadata (layout, tone, goal, media, interaction) and per-section selection prompts. This catalog serves as the comprehensive reference for all variant numbers and categories.
+
 ## Install Syntax
 
 ```bash
@@ -30,54 +34,74 @@ Blocks are tagged by use-case archetype:
 
 #### Hero Sections — `hero` (175 blocks)
 Full-width landing page hero sections with headings, CTAs, imagery, and badges.
+**Common subtypes:** `centered` · `split_left/right_media` · `full_bleed` · `form_capture` · `video` · `with_logos`
 **Variants:** 1-16, 18, 20, 21, 24-40, 45, 47, 49-51, 53, 55, 57-60, 64, 67, 68, 70, 71, 74-76, 78-80, 82-87, 89-91, 99-101, 103, 104, 107, 108, 111, 112, 115, 116, 123, 125, 127, 129, 134-136, 141, 143-146, 149, 151, 152, 157-160, 162-168, 170-175, 177-180, 183, 185-187, 187a, 187b, 190, 192, 194-197, 200-206, 210-216, 218-234, 234a, 234b, 236-248, 256, 258, 259
 ```bash
 npx shadcn add @shadcnblocks/hero1       # 2-column with badge, heading, CTA buttons, and image
-npx shadcn add @shadcnblocks/hero125     # Popular variant
-npx shadcn add @shadcnblocks/hero200     # Recent addition
+npx shadcn add @shadcnblocks/hero125     # Modern centered with gradient accents
+npx shadcn add @shadcnblocks/hero200     # Multi-CTA with feature highlights
 ```
 
 #### Feature Sections — `feature` (272 blocks)
 Feature grids, showcases, comparison sections, and benefit highlights.
+**Common subtypes:** `grid_cards` · `grid_icons` · `alternating` · `bento` · `tabs` · `checklist` · `split_media` · `stacked`
 **Variants:** 1-44, 50-83, 85-99, 101-207, 209-225, 227-257, 261, 266-272, 274-289, 292-295, 297, 299, 312-314, 322, 323
 ```bash
-npx shadcn add @shadcnblocks/feature1
-npx shadcn add @shadcnblocks/feature8
+npx shadcn add @shadcnblocks/feature1    # 2-column split with image
+npx shadcn add @shadcnblocks/feature3    # 3-column card grid with icons
+npx shadcn add @shadcnblocks/feature10   # 4-column icon grid ("Why Us?" style)
+npx shadcn add @shadcnblocks/feature14   # Alternating rows with checklists
+npx shadcn add @shadcnblocks/feature42   # Tabbed feature explorer
 ```
 
 #### CTA (Call to Action) — `cta` (26 blocks)
 Conversion-focused sections with buttons, forms, and urgency elements.
+**Common subtypes:** `simple_button` · `form_capture` · `split_with_image` · `multi_action` · `with_social_proof`
 **Variants:** 1, 3-7, 10-23, 26-28, 30-32
 ```bash
-npx shadcn add @shadcnblocks/cta1
+npx shadcn add @shadcnblocks/cta1    # Simple headline + button
+npx shadcn add @shadcnblocks/cta10   # Email capture form
+npx shadcn add @shadcnblocks/cta20   # Multiple action paths
 ```
 
 #### Pricing — `pricing` (35 blocks)
 Pricing tables, cards, tier comparisons, and toggle monthly/annual layouts.
+**Common subtypes:** `grid_cards` · `comparison_table` · `toggle` · `single_plan` · `enterprise`
 **Variants:** 1-16, 20-24, 26-38, 40
 ```bash
-npx shadcn add @shadcnblocks/pricing3
+npx shadcn add @shadcnblocks/pricing3    # 3-tier cards with highlighted plan
+npx shadcn add @shadcnblocks/pricing8    # Monthly/annual toggle
+npx shadcn add @shadcnblocks/pricing11   # Feature comparison table
 ```
 
 #### Testimonial — `testimonial` (28 blocks)
 Customer quotes, review carousels, social proof, and rating displays.
+**Common subtypes:** `grid_cards` · `carousel` · `featured_single` · `masonry` · `star_ratings` · `video`
 **Variants:** 1-4, 6-21, 23-30
 ```bash
-npx shadcn add @shadcnblocks/testimonial1
+npx shadcn add @shadcnblocks/testimonial1  # Quote cards grid with avatars
+npx shadcn add @shadcnblocks/testimonial3  # Single large featured quote
+npx shadcn add @shadcnblocks/testimonial8  # Scrollable carousel
 ```
 
 #### FAQ — `faq` (16 blocks)
 Frequently asked questions with accordion, list, or grid layouts.
+**Common subtypes:** `accordion` · `grid` · `sidebar_categories` · `with_contact_cta`
 **Variants:** 1-12, 14-17
 ```bash
-npx shadcn add @shadcnblocks/faq1
+npx shadcn add @shadcnblocks/faq1    # Classic accordion
+npx shadcn add @shadcnblocks/faq5    # Two-column grid (all visible)
+npx shadcn add @shadcnblocks/faq10   # Category sidebar navigation
 ```
 
 #### Stats — `stats` (18 blocks)
 Metrics, counters, KPIs, and data visualization sections.
+**Common subtypes:** `number_row` · `with_icons` · `with_image` · `animated_counters`
 **Variants:** 1, 2, 4-19
 ```bash
-npx shadcn add @shadcnblocks/stats1
+npx shadcn add @shadcnblocks/stats1    # Bold numbers in a row
+npx shadcn add @shadcnblocks/stats5    # Stats with icons and descriptions
+npx shadcn add @shadcnblocks/stats10   # Split section with image
 ```
 
 #### Logos — `logos` (13 blocks)
@@ -149,16 +173,22 @@ npx shadcn add @shadcnblocks/industries1
 
 #### Navbar — `navbar` (18 blocks)
 Navigation bars, site headers, and mega menus.
+**Common subtypes:** `simple` · `dropdown` · `mega_menu` · `centered_logo` · `app_style`
 **Variants:** 1-11, 14, 17, 18, 21, 22, 24, 29
 ```bash
-npx shadcn add @shadcnblocks/navbar1
+npx shadcn add @shadcnblocks/navbar1    # Simple logo + links + CTA
+npx shadcn add @shadcnblocks/navbar5    # With dropdown menus
+npx shadcn add @shadcnblocks/navbar9    # Mega menu with rich panels
 ```
 
 #### Footer — `footer` (25 blocks)
 Page footers with links, social icons, newsletter signup, and legal links.
+**Common subtypes:** `multi_column` · `simple_row` · `with_newsletter` · `with_cta` · `minimal`
 **Variants:** 1-18, 23-25, 27, 30-32
 ```bash
-npx shadcn add @shadcnblocks/footer1
+npx shadcn add @shadcnblocks/footer1    # Multi-column with link groups
+npx shadcn add @shadcnblocks/footer5    # Simple single row
+npx shadcn add @shadcnblocks/footer10   # With newsletter signup form
 ```
 
 #### Banner — `banner` (7 blocks)
@@ -280,9 +310,12 @@ npx shadcn add @shadcnblocks/careers1
 
 #### Contact — `contact` (17 blocks)
 Contact forms, maps, and company contact information sections.
+**Common subtypes:** `form_with_sidebar` · `centered_form` · `contact_cards` · `with_map`
 **Variants:** 1-11, 14, 16-20
 ```bash
-npx shadcn add @shadcnblocks/contact1
+npx shadcn add @shadcnblocks/contact1    # Form with info sidebar
+npx shadcn add @shadcnblocks/contact5    # Centered form only
+npx shadcn add @shadcnblocks/contact10   # Contact method cards
 ```
 
 #### Signup — `signup` (10 blocks)

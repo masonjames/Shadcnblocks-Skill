@@ -1,4 +1,4 @@
-# Shadcn UI & Blocks — Claude Code Skill
+# Shadcn UI & Blocks — Claude Code Plugin
 
 A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that gives Claude deep knowledge of **1,338 blocks** and **1,189 components** from [ShadcnBlocks](https://shadcnblocks.com/), built on [shadcn/ui](https://ui.shadcn.com/) and Tailwind CSS.
 

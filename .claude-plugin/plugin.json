@@ -1,0 +1,12 @@
+{
+  "name": "shadcnblocks",
+  "version": "0.1.0",
+  "description": "ShadcnBlocks integration for building frontends with shadcn/ui components and Tailwind CSS. Provides knowledge of 1,338 premium blocks and 1,189 free components.",
+  "author": {
+    "name": "Mason James"
+  },
+  "repository": "https://github.com/masonjames/Shadcnblocks-Skill",
+  "license": "MIT",
+  "keywords": ["shadcn", "tailwind", "ui", "components", "blocks", "frontend"],
+  "skills": "./skills/"
+}

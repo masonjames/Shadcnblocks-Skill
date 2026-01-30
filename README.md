@@ -10,9 +10,18 @@ Skills are reusable instructions that extend Claude Code's capabilities. They ac
 
 ## Installation
 
-Add this skill to your Claude Code plugin or include it in your project's `.claude/` configuration:
+Install as a Claude Code plugin from GitHub:
+
+```bash
+claude plugin marketplace add masonjames/Shadcnblocks-Skill
+claude plugin install shadcnblocks
+```
+
+### Plugin Structure
 
 ```
+.claude-plugin/
+  plugin.json
 skills/
   shadcn-ui/
     SKILL.md
@@ -86,14 +95,18 @@ Components are reusable UI elements: forms, inputs, buttons, dialogs, sheets, ac
 ## Repository Structure
 
 ```
-SKILL.md                     # Skill definition with selection guides
-references/
-  block-catalog.md           # Full block catalog (71 categories)
-  component-catalog.md       # Full component catalog (60+ groups)
-  setup-guide.md             # Step-by-step setup instructions
-scripts/
-  get-api-key.sh             # Retrieves API key (env var or 1Password)
-  setup-shadcnblocks.sh      # Automated project setup
+.claude-plugin/
+  plugin.json                # Plugin manifest
+skills/
+  shadcn-ui/
+    SKILL.md                 # Skill definition with selection guides
+    references/
+      block-catalog.md       # Full block catalog (71 categories)
+      component-catalog.md   # Full component catalog (60+ groups)
+      setup-guide.md         # Step-by-step setup instructions
+    scripts/
+      get-api-key.sh         # Retrieves API key (env var or 1Password)
+      setup-shadcnblocks.sh  # Automated project setup
 ```
 
 ## Security
